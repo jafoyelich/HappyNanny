@@ -48,7 +48,7 @@ export default function PersonalPage() {
             </Stack>
             <Grid container spacing={3}>
                 {staffMembers.map((member) => (
-                    <Grid item xs={12} md={3} key={member.name}>
+                    <Grid key={member.name} size={{ xs: 12, md: 3 }}>
                         <StaffCard {...member} />
                     </Grid>
                 ))}

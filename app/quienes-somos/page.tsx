@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { Container, Grid, Stack, Typography } from "@mui/material";
-import GridLegacy from "@mui/material/GridLegacy";
 
 export const metadata: Metadata = {
     title: "Quiénes Somos",
@@ -41,7 +40,7 @@ export default function QuienesSomosPage() {
                 {values.map((value) => {
                     const valueId = value.title.toLowerCase().replace(/\s+/g, "-");
                     return (
-                        <GridLegacy item xs={12} md={4} key={value.title}>
+                        <Grid key={value.title} size={{ xs: 12, md: 4 }}>
                             <Stack spacing={1.5} component="article" aria-labelledby={valueId}>
                                 <Typography id={valueId} component="h2" variant="h5">
                                     {value.title}
@@ -50,7 +49,7 @@ export default function QuienesSomosPage() {
                                     {value.description}
                                 </Typography>
                             </Stack>
-                        </GridLegacy>
+                        </Grid>
                     );
                 })}
             </Grid>

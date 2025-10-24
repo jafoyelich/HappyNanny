@@ -1,5 +1,6 @@
 import { Container, Stack, Typography } from "@mui/material";
 import PriceTable, { type PricePlan } from "@/components/PriceTable";
+import { CtaSection } from "@/components";
 
 
 const pricePlans: PricePlan[] = [
@@ -26,17 +27,30 @@ const pricePlans: PricePlan[] = [
 
 export default function CostosPage() {
     return (
-        <Container component="section" maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
-            <Stack spacing={3} sx={{ mb: 4 }}>
-                <Typography component="h1" variant="h3">
-                    Planes transparentes y flexibles
-                </Typography>
-                <Typography variant="body1" color="text.secondary" maxWidth="md">
-                    Matrícula anual $120.000. Descuentos del 15% para hermanos y becas parciales según
-                    evaluación socioeconómica. Valores sujetos a actualización anual.
-                </Typography>
-            </Stack>
-            <PriceTable plans={pricePlans} />
-        </Container>
+        <>
+            <Container component="section" maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
+                <Stack spacing={3} sx={{ mb: 4 }}>
+                    <Typography component="h1" variant="h3">
+                        Planes transparentes y flexibles
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary" maxWidth="md">
+                        Matrícula anual $120.000. Descuentos del 15% para hermanos y becas parciales según
+                        evaluación socioeconómica. Valores sujetos a actualización anual.
+                    </Typography>
+                </Stack>
+                <PriceTable plans={pricePlans} />
+            </Container>
+            <CtaSection
+                title="¿Necesitas un plan a tu medida?"
+                description="Conversemos sobre tus horarios y requerimientos para adaptar una propuesta personalizada sin costo."
+                primaryAction={{ label: "Reservar reunión", href: "/horarios" }}
+                secondaryAction={{ label: "Hablar por correo", href: "mailto:happynanny@mail.com" }}
+                highlights={[
+                    "Evaluación pedagógica y socioemocional inicial",
+                    "Opciones de extensión horaria y talleres extra",
+                    "Descuentos corporativos para empresas asociadas"
+                ]}
+            />
+        </>
     );
 }

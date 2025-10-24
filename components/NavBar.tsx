@@ -111,8 +111,52 @@ export default function NavBar() {
         </SwipeableDrawer>
     );
 
+    const brand = (
+        <Stack
+            direction="row"
+            spacing={1.5}
+            alignItems="center"
+            sx={{
+                textDecoration: "none"
+            }}
+        >
+            <Box
+                sx={{
+                    width: 40,
+                    height: 40,
+                    borderRadius: "50%",
+                    display: "grid",
+                    placeItems: "center",
+                    background: "linear-gradient(135deg, #F7BFC4 0%, #FCE3E6 100%)",
+                    color: "primary.contrastText",
+                    fontWeight: 700,
+                    fontSize: 18
+                }}
+            >
+                HN
+            </Box>
+            <Stack spacing={0}>
+                <Typography variant="subtitle2" color="text.secondary" sx={{ fontWeight: 600, letterSpacing: 1.2 }}>
+                    Jardín Infantil
+                </Typography>
+                <Typography variant="h6" component="span" color="text.primary" sx={{ fontWeight: 700 }}>
+                    Happy Nannys
+                </Typography>
+            </Stack>
+        </Stack>
+    );
+
     return (
-        <AppBar color="inherit" position="sticky" elevation={0}>
+        <AppBar
+            color="inherit"
+            position="sticky"
+            sx={{
+                backgroundColor: "rgba(255, 248, 240, 0.92)",
+                backdropFilter: "blur(16px)",
+                borderBottom: "1px solid rgba(226, 226, 226, 0.7)",
+                boxShadow: "0 8px 32px rgba(26, 41, 48, 0.08)"
+            }}
+        >
             <Toolbar disableGutters>
                 <Container
                     maxWidth="lg"
@@ -120,13 +164,11 @@ export default function NavBar() {
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "space-between",
-                        py: 1
+                        py: { xs: 1, md: 1.5 }
                     }}
                 >
                     <Box component={Link} href="/" sx={{ textDecoration: "none" }}>
-                        <Typography variant="h6" component="span" color="primary">
-                            Happy Nannys
-                        </Typography>
+                        {brand}
                     </Box>
                     <Box sx={{ display: { xs: "none", md: "flex" } }}>
                         {renderDesktopLinks}

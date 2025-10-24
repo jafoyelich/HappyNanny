@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { Container, Grid, Stack, Typography } from "@mui/material";
-import GridLegacy from "@mui/material/GridLegacy";
 import { ServiceCard } from "@/components";
 
 export const metadata: Metadata = {
@@ -44,9 +43,9 @@ export default function ServiciosPage() {
             </Stack>
             <Grid container spacing={4}>
                 {serviceCatalog.map((service) => (
-                    <GridLegacy item xs={12} md={4} key={service.title}>
+                    <Grid key={service.title} size={{ xs: 12, md: 4 }}>
                         <ServiceCard {...service} />
-                    </GridLegacy>
+                    </Grid>
                 ))}
             </Grid>
         </Container>

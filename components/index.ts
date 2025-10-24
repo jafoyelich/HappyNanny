@@ -6,3 +6,5 @@ export { default as ScheduleTable } from "./ScheduleTable";
 export { default as PriceTable } from "./PriceTable";
 export { default as StaffCard } from "./StaffCard";
 export { default as ThemeRegistry } from "./ThemeRegistry";
+export { default as TestimonialsSection } from "./TestimonialsSection";
+export { default as CtaSection } from "./CtaSection";
