@@ -82,7 +82,7 @@ export default function Hero() {
                             }}
                         >
                             <Image
-                                src="/images/hero-illustration.svg"
+                                src="/images/logo-happy.png"
                                 alt="Ilustración de niñas y niños aprendiendo en un entorno creativo"
                                 fill
                                 sizes="(max-width: 900px) 100vw, 50vw"
