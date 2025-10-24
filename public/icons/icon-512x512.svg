@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="icon512Title icon512Desc">
+  <title id="icon512Title">Icono Parvularia</title>
+  <desc id="icon512Desc">Recurso gráfico para instalaciones de aplicaciones.</desc>
+  <rect width="512" height="512" rx="112" fill="#FFF8F0"/>
+  <circle cx="200" cy="200" r="120" fill="#F7BFC4"/>
+  <circle cx="340" cy="220" r="90" fill="#BEE3F8"/>
+  <path d="M96 420C156 324 248 304 320 320C392 336 448 380 480 420Z" fill="#C7EAD9"/>
+
+</svg>

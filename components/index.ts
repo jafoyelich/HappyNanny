@@ -1,0 +1,8 @@
+export { default as NavBar } from "./NavBar";
+export { default as Footer } from "./Footer";
+export { default as Hero } from "./Hero";
+export { default as ServiceCard } from "./ServiceCard";
+export { default as ScheduleTable } from "./ScheduleTable";
+export { default as PriceTable } from "./PriceTable";
+export { default as StaffCard } from "./StaffCard";
+export { default as ThemeRegistry } from "./ThemeRegistry";

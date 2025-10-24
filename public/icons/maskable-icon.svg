@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="maskableTitle maskableDesc">
+  <title id="maskableTitle">Icono maskable Parvularia</title>
+  <desc id="maskableDesc">Icono adaptable para PWA con zonas seguras amplias.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7BFC4"/>
+      <stop offset="100%" stop-color="#BEE3F8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bg)"/>
+  <circle cx="256" cy="188" r="120" fill="#FFF8F0" opacity="0.8"/>
+  <path d="M112 420C168 320 256 304 320 320C384 336 432 368 472 420Z" fill="#FFF3B0" opacity="0.85"/>
+  <path d="M196 204C204 188 220 178 236 178C252 178 268 188 276 204" stroke="#F7BFC4" stroke-width="16" stroke-linecap="round"/>
+</svg>

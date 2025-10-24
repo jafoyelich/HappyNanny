@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+    <title id="title">Logo Happy Nannys</title>
+    <desc id="desc">Dos niños sonrientes con un arcoíris y el texto Happy Nannys en colores pastel.</desc>
+
+    <!-- Fondo -->
+    <rect width="512" height="512" fill="#FFF8F0" rx="32"/>
+
+    <!-- Niño izquierda (simplificado) -->
+    <circle cx="160" cy="180" r="60" fill="#F2C1A9"/> <!-- cara -->
+    <rect x="120" y="230" width="80" height="60" rx="20" fill="#F7BFC4"/> <!-- camiseta -->
+
+    <!-- Niño derecha (simplificado) -->
+    <circle cx="340" cy="180" r="60" fill="#4E342E"/> <!-- cara oscura -->
+    <rect x="300" y="230" width="80" height="60" rx="20" fill="#4FC3F7"/> <!-- camiseta -->
+
+    <!-- Arco iris y formas decorativas -->
+    <path d="M100 150 A150 150 0 0 1 410 150" stroke="#F7E17C" stroke-width="40" fill="none"/>
+
+    <!-- Texto Happy Nannys -->
+    <text x="80" y="380" font-size="72" font-family="Arial Rounded MT Bold, sans-serif" font-weight="bold">
+        <tspan fill="#E57373">H</tspan>
+        <tspan fill="#FFB74D">a</tspan>
+        <tspan fill="#81C784">p</tspan>
+        <tspan fill="#64B5F6">p</tspan>
+        <tspan fill="#BA68C8">y</tspan>
+    </text>
+    <text x="80" y="450" font-size="72" font-family="Arial Rounded MT Bold, sans-serif" font-weight="bold">
+        <tspan fill="#4DB6AC">N</tspan>
+        <tspan fill="#42A5F5">a</tspan>
+        <tspan fill="#F06292">n</tspan>
+        <tspan fill="#81C784">n</tspan>
+        <tspan fill="#FFD54F">y</tspan>
+        <tspan fill="#7E57C2">s</tspan>
+    </text>
+</svg>
