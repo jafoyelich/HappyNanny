@@ -9,28 +9,12 @@ export const metadata: Metadata = {
 
 const staffMembers = [
     {
-        name: "Camila Rivas",
-        role: "Directora Pedagógica",
+        name: "Lic. Ana Pérez",
+        role: "Estimulación del lenguaje y motricidad fina",
         description:
-            "Educadora de párvulos con 12 años de experiencia. Especialista en neuroeducación y liderazgo pedagógico."
-    },
-    {
-        name: "Felipe Andrade",
-        role: "Psicopedagogo",
-        description:
-            "Diseña apoyos personalizados y coordina evaluaciones de desarrollo en conjunto con las familias."
-    },
-    {
-        name: "María José Pérez",
-        role: "Educadora Sala Cuna",
-        description:
-            "Promueve experiencias sensoriales y rutinas afectivas para acompañar la primera infancia."
-    },
-    {
-        name: "Andrea Rojas",
-        role: "Fonoaudióloga",
-        description:
-            "Implementa estrategias lúdicas para ampliar vocabulario, lenguaje narrativo y habilidades socioemocionales."
+            "Educadora con 3 años de experiencia en educación inicial.",
+        horarios: "Mañana - tarde",
+        rating: 5
     }
 ];
 

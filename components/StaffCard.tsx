@@ -1,19 +1,23 @@
 "use client";
 
-import { Avatar, Card, CardContent, Stack, Typography } from "@mui/material";
+import { Avatar, Card, CardContent, Rating, Stack, Typography } from "@mui/material";
 
 export type StaffCardProps = {
     name: string;
     role: string;
     description: string;
     photoSrc?: string;
+    horarios: string;
+    rating: number;
 };
 
 export default function StaffCard({
                                       name,
                                       role,
                                       description,
-                                      photoSrc = "/images/hero-illustration.svg"
+                                      photoSrc = "/images/logo-happy.png",
+                                      horarios,
+                                      rating,
                                   }: StaffCardProps) {
     return (
         <Card
@@ -40,6 +44,13 @@ export default function StaffCard({
                     <Typography variant="body2" color="text.secondary">
                         {description}
                     </Typography>
+                    <Typography variant="body2" color="text.secondary">{horarios}</Typography>
+                    <Rating
+                        value={rating}
+                        precision={0.5}
+                        readOnly
+                        aria-label={`Puntuación ${rating} de 5`}
+                    />
                 </Stack>
             </CardContent>
         </Card>

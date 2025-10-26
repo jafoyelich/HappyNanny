@@ -13,12 +13,12 @@ const values = [
         description: "Atendemos dimensiones emocionales, cognitivas y sociales con experiencias activas."
     },
     {
-        title: "Vínculos afectivos",
-        description: "Cuidamos la relación familia-equipo con comunicación cercana y acompañamiento."
+        title: "Misión",
+        description: "Brindar un servicio educativo y de cuidado infantil integral, basado en el respeto, el juego, el afecto y la estimulación temprana. Contribuir al desarrollo pleno de cada niño y a la tranquilidad de cada familia."
     },
     {
-        title: "Ambiente seguro",
-        description: "Espacios diseñados con criterios sensoriales y ergonomía para la primera infancia."
+        title: "Visión",
+        description: "Ser la red de niñeras y educadoras más confiable, moderna y reconocida en Bolivia, destacando por la calidez humana, el profesionalismo y el compromiso con la infancia."
     }
 ];
 

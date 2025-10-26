@@ -3,9 +3,9 @@
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
 
 export type ScheduleEntry = {
-    day: string;
-    morning: string;
-    afternoon: string;
+    turn: string;
+    hour: string;
+    modality: string;
 };
 
 type ScheduleTableProps = {
@@ -25,39 +25,31 @@ export default function ScheduleTable({ entries }: ScheduleTableProps) {
             }}
         >
             <Table aria-label="Tabla de horarios" sx={{ minWidth: 360 }}>
-                <caption>
-                    <Typography variant="body2" color="text.secondary">
-                        Todos los horarios incluyen colación saludable y bloques de recreación guiada.
-                    </Typography>
-                </caption>
                 <TableHead>
                     <TableRow>
                         <TableCell component="th" scope="col">
-                            Día
+                            Turno
                         </TableCell>
                         <TableCell component="th" scope="col">
-                            Jornada mañana
+                            Horario
                         </TableCell>
                         <TableCell component="th" scope="col">
-                            Jornada tarde
+                            Modalidad
                         </TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {entries.map((entry) => (
                         <TableRow
-                            key={entry.day}
                             sx={{
                                 "&:nth-of-type(odd)": {
                                     backgroundColor: "rgba(252, 227, 230, 0.2)"
                                 }
                             }}
                         >
-                            <TableCell component="th" scope="row" sx={{ fontWeight: 600 }}>
-                                {entry.day}
-                            </TableCell>
-                            <TableCell sx={{ fontWeight: 500 }}>{entry.morning}</TableCell>
-                            <TableCell sx={{ fontWeight: 500 }}>{entry.afternoon}</TableCell>
+                            <TableCell sx={{ fontWeight: 500 }}>{entry.turn} </TableCell>
+                            <TableCell sx={{ fontWeight: 500 }}>{entry.hour}</TableCell>
+                            <TableCell  sx={{ fontWeight: 500}}>{entry.modality}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

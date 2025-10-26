@@ -20,21 +20,21 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
     {
         name: "Familia Rojas",
-        role: "Sala cuna · 1 año 6 meses",
+        role: "Estimulación temprana",
         quote:
             "La adaptación fue suave y llena de cariño. Recibimos reportes diarios y vemos a nuestro hijo feliz cada día.",
         rating: 5
     },
     {
         name: "Familia Suárez",
-        role: "Nivel medio mayor",
+        role: "Acompañamiento en actividades Educativas",
         quote:
             "Las actividades combinan arte, música y movimiento. El acompañamiento del equipo ha sido clave en casa.",
         rating: 5
     },
     {
         name: "Familia Campos",
-        role: "Programa flex extendido",
+        role: "Estimulación del lenguaje",
         quote:
             "Agradecemos la flexibilidad y la comunicación constante. Sentimos que somos parte activa del proceso.",
         rating: 4.5

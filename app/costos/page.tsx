@@ -5,23 +5,35 @@ import { CtaSection } from "@/components";
 
 const pricePlans: PricePlan[] = [
     {
-        name: "Media jornada",
-        price: "$210.000 / mes",
-        description: "4,5 horas diarias con colación saludable y talleres base.",
-        features: ["Ingreso 8:00 o 13:30", "Colación saludable", "Plan pedagógico individual"]
+        name: "Estimulación temprana",
+        price: "20bs./hora",
+        description: "Dirigida a niños de 0 a 3 años para fortalecer su desarrollo integral.",
+        features: ["Precio por turno 80bs.", "Precio mensual 1200bs.",]
     },
     {
-        name: "Jornada completa",
-        price: "$290.000 / mes",
-        description: "Jornada extendida con alimentación completa y siesta asistida.",
-        features: ["Ingreso 8:00", "Almuerzo y once", "Extensión hasta las 18:30"],
+        name: "Acompañamiento educativo",
+        price: "25bs./hora",
+        description: "Apoyo pedagógico para niños en edad preescolar y escolar",
+        features: ["Precio por turno 100bs.", "Precio mensual 1400bs.",]
+    },
+    {
+        name: "Estimulación del lenguaje",
+        price: "30bs./hora",
+        description: "Ejercicios y juegos para favorecer la comunicación, pronunciación y coordinación corporal",
+        features: ["Precio por turno 120bs.", "Precio mensual 1600bs.",]
+    },
+    {
+        name: "Cuidado nocturno",
+        price: "30-40bs. /hora",
+        description: "Servicio especializado para padres que trabajan o estudian de noche",
+        features: ["Precio por turno 100bs.", "Precio mensual 1800bs.",]
+    },
+    {
+        name: "Atención por horas",
+        price: "20-25bs. /hora",
+        description: "Apoyo pedagógico para niños en edad preescolar y escolar",
+        features: ["Horario flexible", "Atención personalizada",],
         featured: true
-    },
-    {
-        name: "Flex extendido",
-        price: "$330.000 / mes",
-        description: "Incluye talleres extra y flexibilidad diaria según disponibilidad.",
-        features: ["Reservas por app", "Talleres vespertinos", "15 días de flexibilidad al año"]
     }
 ];
 
@@ -31,11 +43,10 @@ export default function CostosPage() {
             <Container component="section" maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
                 <Stack spacing={3} sx={{ mb: 4 }}>
                     <Typography component="h1" variant="h3">
-                        Planes transparentes y flexibles
+                        Costos de servicios
                     </Typography>
                     <Typography variant="body1" color="text.secondary" maxWidth="md">
-                        Matrícula anual $120.000. Descuentos del 15% para hermanos y becas parciales según
-                        evaluación socioeconómica. Valores sujetos a actualización anual.
+                        Los precios pueden variar según la edad del niño, la cantidad de horas, la ubicación del servicio, si incluye alimentación o materiales didácticos.
                     </Typography>
                 </Stack>
                 <PriceTable plans={pricePlans} />
@@ -47,8 +58,7 @@ export default function CostosPage() {
                 secondaryAction={{ label: "Hablar por correo", href: "mailto:happynanny@mail.com" }}
                 highlights={[
                     "Evaluación pedagógica y socioemocional inicial",
-                    "Opciones de extensión horaria y talleres extra",
-                    "Descuentos corporativos para empresas asociadas"
+                    "Opciones de extensión horaria y talleres extra"
                 ]}
             />
         </>

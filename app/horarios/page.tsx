@@ -9,11 +9,12 @@ export const metadata: Metadata = {
 };
 
 const schedule: ScheduleEntry[] = [
-    { day: "Lunes", morning: "08:00 - 12:30", afternoon: "13:30 - 18:30" },
-    { day: "Martes", morning: "08:00 - 12:30", afternoon: "13:30 - 18:30" },
-    { day: "Miércoles", morning: "08:00 - 12:30", afternoon: "13:30 - 18:30" },
-    { day: "Jueves", morning: "08:00 - 12:30", afternoon: "13:30 - 18:30" },
-    { day: "Viernes", morning: "08:00 - 12:30", afternoon: "13:30 - 17:30" }
+    { turn: "Mañana", hour: "08:00 - 12:30", modality:"Estimulación y acompañamiento educativo" },
+    { turn: "Tarde", hour: "14:00 - 18:00", modality:"Actividades lúdicas, motricidad y lenguaje" },
+    { turn: "Noche", hour: "19:00 - 22:00", modality:"Niñeras nocturnas o cuidado relajado" },
+    { turn: "Por horas", hour: "Flexible", modality:"Atención personalizada" },
+
+
 ];
 
 export default function HorariosPage() {
@@ -25,8 +26,7 @@ export default function HorariosPage() {
                         Horarios pensados para tu familia
                     </Typography>
                     <Typography variant="body1" color="text.secondary" maxWidth="md">
-                        Puedes combinar jornadas y contratar extensión horaria según tus necesidades. También
-                        contamos con opción de ingreso gradual para adaptaciones más suaves.
+                        Disponible en horarios de mañana, tarde o noche, con opción de actividades educativas o juego libre.
                     </Typography>
                 </Stack>
                 <ScheduleTable entries={schedule} />

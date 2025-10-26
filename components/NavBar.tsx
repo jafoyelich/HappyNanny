@@ -3,7 +3,7 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import {
-    AppBar,
+    AppBar, Avatar,
     Box,
     Button,
     Container,
@@ -120,24 +120,14 @@ export default function NavBar() {
                 textDecoration: "none"
             }}
         >
-            <Box
-                sx={{
-                    width: 40,
-                    height: 40,
-                    borderRadius: "50%",
-                    display: "grid",
-                    placeItems: "center",
-                    background: "linear-gradient(135deg, #F7BFC4 0%, #FCE3E6 100%)",
-                    color: "primary.contrastText",
-                    fontWeight: 700,
-                    fontSize: 18
-                }}
-            >
-                HN
-            </Box>
+            <Avatar
+                src="/images/logo-happy.png"
+                alt={`Logo de HappyNanny`}
+                sx={{ width: 96, height: 96, border: "4px solid", borderColor: "primary.main" }}
+            />
             <Stack spacing={0}>
                 <Typography variant="subtitle2" color="text.secondary" sx={{ fontWeight: 600, letterSpacing: 1.2 }}>
-                    Jardín Infantil
+                    Red de educadoras
                 </Typography>
                 <Typography variant="h6" component="span" color="text.primary" sx={{ fontWeight: 700 }}>
                     Happy Nannys

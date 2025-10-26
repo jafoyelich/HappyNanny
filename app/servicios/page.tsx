@@ -26,6 +26,12 @@ const serviceCatalog = [
         description:
             "Ejercicios y juegos para favorecer la comunicación, pronunciación y coordinación corporal:",
         highlights: ["Actividades de respiración, articulación y ritmo.", "Cuentos, canciones y rimas.", "Motricidad gruesa y fina con materiales didácticos."]
+    },
+    {
+        title: "Cuidado Infantil Nocturno",
+        description:
+            "Servicio especializado para padres que trabajan o estudian de noche",
+        highlights: ["Rutina de sueño segura", "Supervisión del descanso", "Cena incluida", "Actividades relajantes", "Atención por noche o mensual"]
     }
 ];
 

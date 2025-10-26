@@ -29,7 +29,7 @@ export default function Hero() {
                                     sx={{ fontWeight: 600, bgcolor: "secondary.light" }}
                                 />
                                 <Chip
-                                    label="Niñeras certificadas"
+                                    label="Educadoras certificadas"
                                     sx={{ fontWeight: 600, bgcolor: "warning.main", color: "warning.contrastText" }}
                                 />
                             </Stack>
