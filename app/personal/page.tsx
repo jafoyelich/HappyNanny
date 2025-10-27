@@ -9,13 +9,69 @@ export const metadata: Metadata = {
 
 const staffMembers = [
     {
-        name: "Lic. Ana Pérez",
-        role: "Estimulación del lenguaje y motricidad fina",
+        photoSrc: "/images/valeria.png",
+        name: "Valeria",
+        role: "Licenciatura en psicología",
         description:
-            "Educadora con 3 años de experiencia en educación inicial.",
+        "Comprometida con el desarrollo integral de niños y niñas. Me caracterizo por la paciencia, creatividad y responsabilidad en el diseño de actividades pedagógicas que favorecen el aprendizaje significativo",
         horarios: "Mañana - tarde",
         rating: 5
-    }
+    },
+    {
+        photoSrc: "/images/Elena.png",
+        name: "Elena",
+        role: "Educadora",
+        description:
+            "Soy una educadora entusiasta y comprometida con el desarrollo integral de los niños, apasionada por fomentar aprendizajes significativos y la creatividad",
+        horarios: "Mañana",
+        rating: 5
+    },
+    {
+        photoSrc: "/images/patricia.png",
+        name: "Patricia",
+        role: "Licenciatura en pedagogía",
+        description:
+        "Me caracterizo por ser paciente, proactiva y dedicada a ofrecer un ambiente seguro y estimulante para los niños.",
+        horarios: "Tarde - Noche",
+        rating: 5
+    },
+    {
+        photoSrc: "/images/selena.png",
+        name: "Selena",
+        role: "Tecnico en educación parvularia",
+        description:
+        "Educadora técnica en proceso de formación, con conocimientos en estimulación, hábitos de autonomía y actividades lúdicas.",
+        horarios: "Mañana - Tarde",
+        rating: 5
+    },
+    {
+        photoSrc: "/images/marianela.png",
+        name: "Marianela",
+        role: "Tecnico en educación parvularia",
+        description:
+            "Educadora técnica en proceso de formación, con conocimientos en estimulación, hábitos de autonomía y actividades lúdicas.",
+        horarios: "Noche",
+        rating: 5
+    },
+    {
+        photoSrc: "/images/alejandra.png",
+        name: "alejandra",
+        role: "Tecnico en educación parvularia",
+        description:
+            "Educadora técnica en proceso de formación, con conocimientos en estimulación, hábitos de autonomía y actividades lúdicas.",
+        horarios: "Mañana - Tarde",
+        rating: 5
+    },
+    {
+        photoSrc: "/images/ximena.png",
+        name: "Ximena",
+        role: "Tecnico en educación parvularia",
+        description:
+            "Educadora técnica en proceso de formación, con conocimientos en estimulación, hábitos de autonomía y actividades lúdicas.",
+        horarios: "Mañana - Tarde",
+        rating: 5
+    },
+
 ];
 
 export default function PersonalPage() {

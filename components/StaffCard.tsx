@@ -6,7 +6,7 @@ export type StaffCardProps = {
     name: string;
     role: string;
     description: string;
-    photoSrc?: string;
+    photoSrc: string;
     horarios: string;
     rating: number;
 };
@@ -15,7 +15,7 @@ export default function StaffCard({
                                       name,
                                       role,
                                       description,
-                                      photoSrc = "/images/logo-happy.png",
+                                      photoSrc,
                                       horarios,
                                       rating,
                                   }: StaffCardProps) {
