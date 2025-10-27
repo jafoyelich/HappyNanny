@@ -8,3 +8,4 @@ export { default as StaffCard } from "./StaffCard";
 export { default as ThemeRegistry } from "./ThemeRegistry";
 export { default as TestimonialsSection } from "./TestimonialsSection";
 export { default as CtaSection } from "./CtaSection";
+export { LoginDialog } from "./LoginDialog";

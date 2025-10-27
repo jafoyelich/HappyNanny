@@ -3,7 +3,8 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import {
-    AppBar, Avatar,
+    AppBar,
+    Avatar,
     Box,
     Button,
     Container,
@@ -18,6 +19,7 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useMemo, useState } from "react";
+import { LoginDialog } from "./LoginDialog";
 
 type NavLink = {
     label: string;
@@ -36,6 +38,7 @@ const links: NavLink[] = [
 export default function NavBar() {
     const pathname = usePathname();
     const [open, setOpen] = useState(false);
+    const [loginOpen, setLoginOpen] = useState(false);
 
     const activeMap = useMemo(() => {
         const current = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
@@ -107,6 +110,18 @@ export default function NavBar() {
                         );
                     })}
                 </List>
+                <Button
+                    fullWidth
+                    variant="contained"
+                    size="large"
+                    sx={{ mt: 2 }}
+                    onClick={() => {
+                        setLoginOpen(true);
+                        setOpen(false);
+                    }}
+                >
+                    Ingresar
+                </Button>
             </Box>
         </SwipeableDrawer>
     );
@@ -160,8 +175,21 @@ export default function NavBar() {
                     <Box component={Link} href="/" sx={{ textDecoration: "none" }}>
                         {brand}
                     </Box>
-                    <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                    <Box
+                        sx={{
+                            display: { xs: "none", md: "flex" },
+                            alignItems: "center",
+                            gap: 1.5
+                        }}
+                    >
                         {renderDesktopLinks}
+                        <Button
+                            variant="contained"
+                            size="large"
+                            onClick={() => setLoginOpen(true)}
+                        >
+                            Ingresar
+                        </Button>
                     </Box>
                     <IconButton
                         aria-label="Abrir menú de navegación"
@@ -173,6 +201,7 @@ export default function NavBar() {
                 </Container>
             </Toolbar>
             {renderMobileDrawer}
+            <LoginDialog open={loginOpen} onClose={() => setLoginOpen(false)} />
         </AppBar>
     );
 }

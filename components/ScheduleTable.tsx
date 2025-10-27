@@ -1,6 +1,6 @@
 "use client";
 
-import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
+import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 
 export type ScheduleEntry = {
     turn: string;
@@ -41,6 +41,7 @@ export default function ScheduleTable({ entries }: ScheduleTableProps) {
                 <TableBody>
                     {entries.map((entry) => (
                         <TableRow
+                            key={`${entry.turn}-${entry.hour}`}
                             sx={{
                                 "&:nth-of-type(odd)": {
                                     backgroundColor: "rgba(252, 227, 230, 0.2)"
